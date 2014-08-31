@@ -1,5 +1,7 @@
 package logic.datatypes;
 
+import java.math.BigDecimal;
+
 import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -17,7 +19,7 @@ public class Transaction {
 	private String _tipo_tarjeta;
 	private String _codigo_moneda;
 	private String _tipo_dispositivo;
-	private int _monto;
+	private BigDecimal _monto;
 	
 
 	public long get_id() {
@@ -80,10 +82,10 @@ public class Transaction {
 	public void set_tipo_dispositivo(String _tipo_dispositivo) {
 		this._tipo_dispositivo = _tipo_dispositivo;
 	}
-	public int get_monto() {
+	public BigDecimal get_monto() {
 		return _monto;
 	}
-	public void set_monto(int _monto) {
+	public void set_monto(BigDecimal _monto) {
 		this._monto = _monto;
 	}
 	

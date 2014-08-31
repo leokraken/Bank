@@ -1,6 +1,7 @@
 package logic.Controllers;
 
 import java.io.StringReader;
+import java.math.BigDecimal;
 import java.util.Random;
 
 import javax.xml.bind.JAXBContext;
@@ -58,9 +59,9 @@ public class TransactionsController {
 		return Constants.cards_numbers[rand.nextInt(Constants.cards_numbers.length)];	
 	}
 	
-	public int getRandomMonto(){
+	public BigDecimal getRandomMonto(){
 		Random rand = new Random();
-		return rand.nextInt(1000000);	
+		return BigDecimal.valueOf(rand.nextInt(1000000));	
 	}
 	
 	public Transaction createTransaction(){
@@ -74,7 +75,7 @@ public class TransactionsController {
 		String hour= getRandomHour();
 		String trade= getRandomTrade();
 		String card= getRandomCardNumber();
-		int monto= getRandomMonto();
+		BigDecimal monto= getRandomMonto();
 		
 		transaction.set_id(id);
 		transaction.set_fecha(date);
