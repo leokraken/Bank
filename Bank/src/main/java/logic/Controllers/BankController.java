@@ -32,7 +32,7 @@ public class BankController implements IBankController{
 		Session s=con.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		Destination d= s.createQueue(Constants.queuename);
 		MessageProducer producer = s.createProducer(d);
-		producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+		producer.setDeliveryMode(DeliveryMode.PERSISTENT);
 
 		for(int i=0; i<messages;i++){		
 		Transaction transaction = tController.createTransaction();
