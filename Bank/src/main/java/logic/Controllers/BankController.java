@@ -74,7 +74,7 @@ public class BankController implements IBankController{
 			if(mensajerec!=null){
 			TextMessage textm2 = (TextMessage)mensajerec;
 			Transaction trans= tController.StringXMLtoTransaction(textm2.getText());
-			System.out.println("Filter BY TRADE: " + trans.get_nombre_comercio());
+			System.out.println("Filter BY TRADE: " + trans.getNombreComercio());
 			}
 		}
 		System.out.print("END");

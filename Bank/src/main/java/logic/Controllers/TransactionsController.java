@@ -77,17 +77,17 @@ public class TransactionsController {
 		String card= getRandomCardNumber();
 		BigDecimal monto= getRandomMonto();
 		
-		transaction.set_id(id);
-		transaction.set_fecha(date);
-		transaction.set_hora(hour);
-		transaction.set_tipo_transaccion(t_t);
-		transaction.set_codigo_comercio(c_t);
-		transaction.set_nombre_comercio(trade);
-		transaction.set_numero_tarjeta(card);
-		transaction.set_tipo_tarjeta(c_t);
-		transaction.set_codigo_moneda(money);
-		transaction.set_tipo_dispositivo(device);
-		transaction.set_monto(monto);
+		transaction.setId(id);
+		transaction.setFecha(date);
+		transaction.setHora(hour);
+		transaction.setTipo(t_t);
+		transaction.setCodigoComercio(c_t);
+		transaction.setNombreComercio(trade);
+		transaction.setNumeroTarjeta(card);
+		transaction.setTipoTarjeta(c_t);
+		transaction.setCodigoMoneda(money);
+		transaction.setTipoDispositivo(device);
+		transaction.setMonto(monto);
 		return transaction;
 		
 	}

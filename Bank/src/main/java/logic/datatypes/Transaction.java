@@ -7,87 +7,87 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name="Transaction")
 public class Transaction {
-
-	@XmlAttribute
-	private long _id;
-	private String _fecha;
-	private String _hora;
-	private String _tipo_transaccion;
-	private String _codigo_comercio;
-	private String _nombre_comercio;
-	private String _numero_tarjeta;
-	private String _tipo_tarjeta;
-	private String _codigo_moneda;
-	private String _tipo_dispositivo;
-	private BigDecimal _monto;
 	
-
-	public long get_id() {
-		return _id;
+	private long id;
+	private String fecha;			//Formato ddmmyy
+	private String hora;			//Formato hhmmss
+	private String tipo; 			//compra, deposito, consulta de saldo
+	private String codigoComercio;
+	private String nombreComercio;	
+	private String numeroTarjeta;
+	private String tipoTarjeta;		//debito, credito, prepaga
+	private String codigoMoneda;	//UYU, USD
+	private String tipoDispositivo;	//POS, WEB, ATM
+	private BigDecimal monto;			
+	
+	public long getId() {
+		return id;
 	}
-	public void set_id(long _id) {
-		this._id = _id;
+	public void setId(long id) {
+		this.id = id;
 	}
-	public String get_fecha() {
-		return _fecha;
+	public String getFecha() {
+		return fecha;
 	}
-	public void set_fecha(String _fecha) {
-		this._fecha = _fecha;
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
 	}
-	public String get_hora() {
-		return _hora;
+	public String getHora() {
+		return hora;
 	}
-	public void set_hora(String _hora) {
-		this._hora = _hora;
+	public void setHora(String hora) {
+		this.hora = hora;
 	}
-	public String get_tipo_transaccion() {
-		return _tipo_transaccion;
+	public String getTipo() {
+		return tipo;
 	}
-	public void set_tipo_transaccion(String _tipo_transaccion) {
-		this._tipo_transaccion = _tipo_transaccion;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
-	public String get_codigo_comercio() {
-		return _codigo_comercio;
+	public String getCodigoComercio() {
+		return codigoComercio;
 	}
-	public void set_codigo_comercio(String _codigo_comercio) {
-		this._codigo_comercio = _codigo_comercio;
+	public void setCodigoComercio(String codigoComercio) {
+		this.codigoComercio = codigoComercio;
 	}
-	public String get_nombre_comercio() {
-		return _nombre_comercio;
+	public String getNombreComercio() {
+		return nombreComercio;
 	}
-	public void set_nombre_comercio(String _nombre_comercio) {
-		this._nombre_comercio = _nombre_comercio;
+	public void setNombreComercio(String nombreComercio) {
+		this.nombreComercio = nombreComercio;
 	}
-	public String get_numero_tarjeta() {
-		return _numero_tarjeta;
+	public String getNumeroTarjeta() {
+		return numeroTarjeta;
 	}
-	public void set_numero_tarjeta(String _numero_tarjeta) {
-		this._numero_tarjeta = _numero_tarjeta;
+	public void setNumeroTarjeta(String numeroTarjeta) {
+		this.numeroTarjeta = numeroTarjeta;
 	}
-	public String get_tipo_tarjeta() {
-		return _tipo_tarjeta;
+	public String getTipoTarjeta() {
+		return tipoTarjeta;
 	}
-	public void set_tipo_tarjeta(String _tipo_tarjeta) {
-		this._tipo_tarjeta = _tipo_tarjeta;
+	public void setTipoTarjeta(String tipoTarjeta) {
+		this.tipoTarjeta = tipoTarjeta;
 	}
-	public String get_codigo_moneda() {
-		return _codigo_moneda;
+	public String getCodigoMoneda() {
+		return codigoMoneda;
 	}
-	public void set_codigo_moneda(String _codigo_moneda) {
-		this._codigo_moneda = _codigo_moneda;
+	public void setCodigoMoneda(String codigoMoneda) {
+		this.codigoMoneda = codigoMoneda;
 	}
-	public String get_tipo_dispositivo() {
-		return _tipo_dispositivo;
+	public String getTipoDispositivo() {
+		return tipoDispositivo;
 	}
-	public void set_tipo_dispositivo(String _tipo_dispositivo) {
-		this._tipo_dispositivo = _tipo_dispositivo;
+	public void setTipoDispositivo(String tipoDispositivo) {
+		this.tipoDispositivo = tipoDispositivo;
 	}
-	public BigDecimal get_monto() {
-		return _monto;
+	public BigDecimal getMonto() {
+		return monto;
 	}
-	public void set_monto(BigDecimal _monto) {
-		this._monto = _monto;
+	public void setMonto(BigDecimal monto) {
+		this.monto = monto;
 	}
+	
+	
 	
 	
 }
