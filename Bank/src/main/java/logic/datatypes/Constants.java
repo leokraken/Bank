@@ -4,7 +4,7 @@ import org.apache.activemq.ActiveMQConnection;
 
 public class Constants {
 	public static String url= ActiveMQConnection.DEFAULT_BROKER_URL;
-	public static String queuename= "TEST.queue";
+	public static String queuename= "bankQueue";
 	public static String[] transaction_type = {"compra","deposito","consulta de saldo","INVALID"};
 	public static String[] card_type = {"debido","credito","prepaga","INVALID"};
 	public static String[] money_code = {"UYU","USD","INVALID"};
