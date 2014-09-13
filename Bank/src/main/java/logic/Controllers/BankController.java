@@ -59,7 +59,7 @@ public class BankController implements IBankController{
 	public void receiveMessages(int messages) throws JMSException, JAXBException{
 		//receive messages
 
-		System.out.print("Sleeping");
+		
 		ConnectionFactory connectf2= new ActiveMQConnectionFactory(Constants.url);
 		Connection con2= connectf2.createConnection();
 		con2.start();
