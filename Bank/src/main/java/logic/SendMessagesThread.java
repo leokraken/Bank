@@ -34,7 +34,7 @@ public class SendMessagesThread implements Runnable{
 	public void run() {
 
 		System.out.println("Iniciando thread");
-		System.out.println(String.format("Se van a enviar %d mensajes cada %d segundos", this._getSeconds() , this.sendMessages));
+		System.out.println(String.format("Se van a enviar %d mensajes aleatorios cada %d segundos", this._getSeconds() , this.sendMessages));
 		run = true;
 		while(run){
 			try {
